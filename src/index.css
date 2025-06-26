@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-nav:#0f172a;
@@ -7,4 +8,14 @@
 
 .section-main {
   @apply py-12 md:py-24 px-10
+}
+
+
+
+.active {
+  color: white !important;
+}
+
+.active::after {
+  width: 100% !important;
 }

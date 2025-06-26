@@ -4,7 +4,7 @@ import { cn } from "../../../lib/utils";
 export default function Title({className, title,titleStyle, text,textStyle }) {
   return (
     <div className={className}>
-      <h2 class={cn("text-[2.074rem] font-bold mb-1 text-[#60a5fa] text-center tracking-tight",titleStyle)}>
+      <h2 className={cn("text-[2.074rem] font-bold mb-1 text-[#60a5fa] text-center tracking-tight",titleStyle)}>
         {title}
       </h2>
       {text && (

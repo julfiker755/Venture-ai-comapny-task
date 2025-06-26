@@ -43,7 +43,7 @@ const solutions = [
 export default function Solutions() {
   return (
     <section
-      id="features"
+      id="solutions"
       className="section-main  bg-[#0f172a]"
     >
       <Title

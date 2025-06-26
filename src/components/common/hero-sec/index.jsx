@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../logo";
 import Button from "../../resuable/button";
+import { Link } from "react-router-dom";
 
 export default function HeroSec() {
   return (
@@ -50,8 +51,8 @@ export default function HeroSec() {
         </p>
 
         <div className="mt-[40px] flex justify-center gap-2 md:gap-10 md:flex-row flex-col animate-fadeInUp delay-[1400ms]">
-          <Button outline={false}> Login</Button>
-          <Button>Signup</Button>
+           <Link to={"/login"}><Button outline={false}> Login</Button></Link>
+           <Link to="/sign-up"><Button>Signup</Button></Link>
         </div>
       </div>
 
