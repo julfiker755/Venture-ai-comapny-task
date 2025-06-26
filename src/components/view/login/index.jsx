@@ -5,8 +5,10 @@ import Form from "../../shared/from";
 import { FromInput } from "../../resuable/from-input";
 import { loginSchema } from "../../schema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useSignUpMutation } from "../../../redux/api/authApi";
 
 export default function Login() {
+    const [signUp]=useSignUpMutation()
     const from = useForm({
         resolver: zodResolver(loginSchema),
         defaultValues: {
@@ -17,7 +19,8 @@ export default function Login() {
 
       const handleSubmit = async (values) => {
         console.log(values)
-        // const res = await userLogin(values).unwrap();
+        const res = await signUp(values).unwrap();
+        console.log(res)
         // if (res?.accessToken) {
         //   setLocalStroage(authKey, res.accessToken);
         //   const user = decodedToken(res.accessToken);
