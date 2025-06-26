@@ -1,6 +1,7 @@
 import React from "react";
 import Title from "../../resuable/title";
 import Button from "../../resuable/button";
+import { Link } from "react-router-dom";
 
 export default function GetStarted() {
   return (
@@ -27,10 +28,8 @@ export default function GetStarted() {
       </div>
 
       <div className="flex justify-center gap-5 mt-8 flex-col md:flex-row">
-        <Button outline={false} className={"py-3 px-8"}>
-          Login
-        </Button>
-        <Button className={"py-3 px-8"}> Signup</Button>
+      <Link to="/login"> <Button outline={false} className={"py-3 px-8"}>Login</Button></Link>
+      <Link to="/sign-up"><Button className={"py-3 px-8"}> Signup</Button></Link>
       </div>
     </section>
   );
