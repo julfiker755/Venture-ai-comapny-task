@@ -4,3 +4,7 @@
 @theme {
   --color-nav:#0f172a;
 }
+
+.section-main {
+  @apply py-12 md:py-24 px-10
+}

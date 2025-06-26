@@ -44,7 +44,7 @@ export default function Solutions() {
   return (
     <section
       id="features"
-      className="py-12 md:py-24 px-10 min-h-[400px] bg-[#0f172a]"
+      className="section-main  bg-[#0f172a]"
     >
       <Title
         title={" Our Solutions"}

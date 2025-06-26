@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-12 md:py-24 px-10 min-h-[400px] bg-[#1e293b]"
+      className="section-main bg-[#1e293b]"
     >
      <Title title={"About Clin Technologies"}/>
 
